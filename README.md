@@ -163,51 +163,51 @@ Observação: As unidades disponibilizadas na tabela são válidas quando se ins
 
 No caso a seguir queremos representar uma figura retangular com base de 20cm e altura de 60cm, em que a quina inferior esquerda está situada nas coordenadas (0,0). A tabela e a figura a seguir, representam a situação em questão:
 
-<div style="display: flex">
-  <div>
-    <table border="1">
-      <thead>
-      <th>Ponto</th>
-      <th>Coordenada no eixo x (cm)</th>
-      <th>Coordenada no eixo y (cm)</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="text-align: center;">1</td>
-          <td style="text-align: center;">0</td>
-          <td style="text-align: center;">0</td>
-        </tr>
-        <tr>
-          <td style="text-align: center;">2</td>
-          <td style="text-align: center;">20</td>
-          <td style="text-align: center;">0</td>
-        </tr>
-        <tr>
-          <td style="text-align: center;">3</td>
-          <td style="text-align: center;">20</td>
-          <td style="text-align: center;">60</td>
-        </tr>
-        <tr>
-          <td style="text-align: center;">4</td>
-          <td style="text-align: center;">0</td>
-          <td style="text-align: center;">60</td>
-        </tr>
-        <tr>
-          <td style="text-align: center;">5</td>
-          <td style="text-align: center;">0</td>
-          <td style="text-align: center;">0</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div>
-    <img src='./images/01_retangular.png' height=202>
-  </div>
-</div>
+  <table border="1">
+    <thead>
+    <th>Ponto</th>
+    <th>Coordenada no eixo x (cm)</th>
+    <th>Coordenada no eixo y (cm)</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">0</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">20</td>
+        <td style="text-align: center;">0</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">20</td>
+        <td style="text-align: center;">60</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">4</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">60</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">5</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">0</td>
+      </tr>
+    </tbody>
+  </table>
 
 <br>
 
-<code style="display: block">retangulo = GeometricProps(
+<p>A imagem ilustrativa que representa a situação descrita na tabela é apresentada a seguir:</p>
+
+  <img src='./images/01_retangular.png' height=300>
+
+
+<br>
+
+<code>retangulo = GeometricProps(
   <br>
     [<br>
         {'x':0, 'y':0}, ##Ponto 1<br>
