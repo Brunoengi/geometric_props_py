@@ -21,7 +21,7 @@ print("O valor do momento estático em relação ao eixo y é: ", retangulo.Sy)
 
 print("O valor do momento de inérica em relação ao eixo x é: ", retangulo.Ix)
 print("O valor do momento de inérica em relação ao eixo y é: ", retangulo.Iy)
-print("O valor do momento de inérica em relação ao eixo xy é: ", retangulo.Ixy)
+print("O produto da inércia em relação aos eixos x e y: ", retangulo.Ixy)
 
 print("O valor do centroide em relação ao eixo x é: ", retangulo.Xg)
 print("O valor do centroide em relação ao eixo y é: ", retangulo.Yg)
@@ -34,6 +34,6 @@ print('A distância vertical Y1 entre o centro de gravidade e o ponto mais baixo
 print('A distância vertical Y2 entre o ponto mais alto ao longo do eixo vertical e o centro de gravidade analisada é:', retangulo.Y2)
 
 print('O módulo resistente W1 (Módulo de elasticidade para flexão (ou módulo de flexão) em relação ao eixo vertical.) é: ', retangulo.W1)
-print('O módulo resistente W1 (Módulo de elasticidade para flexão (ou módulo de flexão) em relação ao eixo vertical.) é: ', retangulo.W2)
+print('O módulo resistente W2 (Módulo de elasticidade para flexão (ou módulo de flexão) em relação ao eixo vertical.) é: ', retangulo.W2)
 
 print('A altura da peça é: ', retangulo.h)

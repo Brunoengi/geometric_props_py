@@ -18,13 +18,20 @@
 
 Observação: As unidades disponibilizadas na tabela são válidas quando se insere as coordenadas da figura poligonal em centímetros (cm).
 
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
+
+
+
+
 <table border="1">
   <thead>
   <th>Propriedades Geométricas</th>
   <th>Sigla</th>
   <th>Unidade</th>
   </thead>
-
   <tbody>
     <tr>
       <td>Área da seção</td>
@@ -159,7 +166,7 @@ Observação: As unidades disponibilizadas na tabela são válidas quando se ins
 
 <code>from geometricProps import GeometricProps</code>
 
-<p>A próxima etapa é criar uma instância da classe, nesse caso, é esperado no argumento umas lista de dicionário, cada dicionário deve contar a propriedade x, que faz referência a coordenada no eixo x, e deve conter também a propriedade y, que faz referência a coordenada no eixo y. Cada vértice da figura está estritamente relacionado a uma posição da lista, em que dentro está contido um dicionário que necessita possição do vértice em relação ao eixo x e em relação ao eixo y. Ao instanciar a classe, a seguinte estrutura deve ser fornecida:</p>
+<p>A próxima etapa é criar uma instância da classe, nesse caso, é esperado no argumento umas lista de dicionário, cada dicionário deve contar a propriedade x, que faz referência a coordenada no eixo x, e deve conter também a propriedade y, que faz referência a coordenada no eixo y. Cada vértice da figura está estritamente relacionado a uma posição da lista, em que dentro está contido um dicionário que necessita da possição do vértice em relação ao eixo x e em relação ao eixo y. Ao instanciar a classe, a seguinte estrutura deve ser fornecida:</p>
 
 No caso a seguir queremos representar uma figura retangular com base de 20cm e altura de 60cm, em que a quina inferior esquerda está situada nas coordenadas (0,0). A tabela e a figura a seguir, representam a situação em questão:
 
@@ -207,16 +214,160 @@ No caso a seguir queremos representar uma figura retangular com base de 20cm e a
 
 <br>
 
-<code>retangulo = GeometricProps(
-  <br>
-    [<br>
-        {'x':0, 'y':0}, ##Ponto 1<br>
-        {'x':20, 'y':0}, ##Ponto 2<br>
-        {'x':20, 'y':60}, ##Ponto 3<br>
-        {'x':0, 'y':60}, ##Ponto 4<br>
-        {'x':0, 'y':0}, ##Ponto 5<br>
+<p>Após ter realizado a importação da classe, deve-se criar uma instância e atribuir em uma variável. Nesse caso, será criada a variável <code>retangulo</code> e atribuida a instância da classe que espera receber no seu construtor, uma lista indicada por <code>[]</code> e cada posição dessa lista deve ser um dicionário indicado por <code>{}</code>. Dentro desse dicionário, será inserido um conjunto chave, valor que faz referência ao eixo (x ou y) e ao valor de referência.
+</p>
+
+```
+retangulo = GeometricProps(
+    [
+        {'x':0, 'y':0}, 
+        {'x':20, 'y':0}, 
+        {'x':20, 'y':60}, 
+        {'x':0, 'y':60}, 
+        {'x':0, 'y':0}
     ])
-</code>
+```
   
+<p>Após ter instanciado a classe corretamente, já é possível acessar todas as propriedades descrita na tabela de proprieades geométricas, cada propriedade geométrica é uma respectiva propriedade da classe. A seguir será apresentado o nome da propriedade da classe e sua propriedade geométrica correspondente.</p>
+
+<h3>Nome da propriedade geométrica e respectiva propriedade da classe:</h3>
+
+<table border="1">
+  <thead>
+  <th>Propriedade Geométrica</th>
+    <th>Propriedade da classe</th>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Área da seção (A)</td>
+      <td>retangulo.A</td>
+    </tr>
+    <tr>
+      <td>Momento estático com relação ao eixo x (S<sub>x</sub>)</td>
+      <td>retangulo.Sx</td>
+    </tr>
+    <tr>
+      <td>Momento estático com relação ao eixo y (S<sub>y</sub>)</td>
+      <td>retangulo.Sy</td>
+    </tr>
+    <tr>
+      <td>Momento de inércia com relação ao eixo x (I<sub>x</sub>)</td>
+      <td>retangulo.Ix</td>
+    </tr>
+    <tr>
+      <td>Momento de inércia com relação ao eixo y (I<sub>y</sub>)</td>
+      <td>retangulo.Iy</td>
+    </tr>
+    <tr>
+      <td>Produto da inércia em relação aos eixos x e y (I<sub>xy</sub>)</td>
+      <td>retangulo.Ixy</td>
+    </tr>
+    <tr>
+      <td>Centróide da seção em relação ao eixo x (x<sub>g</sub>)</td>
+      <td>retangulo.Xg</td>
+    </tr>
+    <tr>
+      <td>Centróide da seção em relação ao eixo y (y<sub>g</sub>)</td>
+      <td>retangulo.Yg</td>
+    </tr>
+    <tr>
+      <td>Momento de inércia baricêntrica (com relação ao centróide) no eixo x (I<sub>xg</sub>)</td>
+      <td>retangulo.Ixg</td>
+    </tr>
+    <tr>
+      <td>Momento de inércia baricêntrica (com relação ao centróide) no eixo y (I<sub>yg</sub>)</td>
+      <td>retangulo.Iyg</td>
+    </tr>
+    <tr>
+      <td>Produto de inércia com relação ao centróide em x e y (I<sub>xyg</sub>)</td>
+      <td>retangulo.Ixyg</td>
+    </tr>
+    <tr>
+      <td>Distância vertical entre o centro de gravidade e o ponto mais baixo ao longo do eixo vertical (Y<sub>1</sub>)</td>
+      <td>retangulo.Y1</td>
+    </tr>
+    <tr>
+      <td>Distância vertical entre o ponto mais alto ao longo do eixo vertical e o centro de gravidade (Y<sub>2</sub>)</td>
+      <td>retangulo.Y2</td>
+    </tr>
+    <tr>
+      <td>Módulo resistente, calculado considerando Y<sub>1</sub> (W<sub>1</sub>)</td>
+      <td>retangulo.W1</td>
+    </tr>
+    <tr>
+      <td>Módulo resistente, calculado considerando Y<sub>2</sub> (W<sub>2</sub>)</td>
+      <td>retangulo.W2</td>
+    </tr>
+    <tr>
+      <td>Altura (h)</td>
+      <td>retangulo.h</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Acessando cada propriedade geométrica e demais informações</h3>
+
+<h4>Valor máximo referente ao eixo x:</h4>
+<code>print("O valor máximo referente ao eixo x é", retangulo.Xmax)<code>
+
+<h4>Valor mínimo referente ao eixo x:</h4>
+<code>print("O valor mínimo referente ao eixo x é", retangulo.Xmin)</code>
+
+<h4>Valor máximo referente ao eixo y:</h4>
+<code>print("O valor máximo referente ao eixo y é", retangulo.Ymax)</code>
+
+<h4>Valor mínimo referente ao eixo y:</h4>
+<code>print("O valor máximo referente ao eixo y é", retangulo.Ymin)</code>
+
+<h4>Área:</h4>
+<code>print("O valor da área é: ", retangulo.A)</code>
+
+<h4>Momento estático em relação ao eixo x:</h4>
+<code>print("O valor do momento estático em relação ao eixo x é: ", retangulo.Sx)</code>
+
+<h4>Momento estático em relação ao eixo y:</h4>
+<code>print("O valor do momento estático em relação ao eixo y é: ", retangulo.Sy)</code>
+
+<h4>Momento de inérica em relação ao eixo x:</h4>
+<code>print("O valor do momento de inérica em relação ao eixo x é: ", retangulo.Ix)</code>
+
+<h4>Momento de inérica em relação ao eixo y:</h4>
+<code>print("O valor do momento de inérica em relação ao eixo y é: ", retangulo.Iy)</code>
+
+<h4>Produto da inércia em relação aos eixos x e y:</h4>
+<code>print("O produto da inércia em relação aos eixos x e y: ", retangulo.Ixy)</code>
+
+<h4>Centróde em relação ao eixo x:</h4>
+<code>print("O valor do centroide em relação ao eixo x é: ", retangulo.Xg)</code>
+
+<h4>Centróde em relação ao eixo y:</h4>
+<code>print("O valor do centroide em relação ao eixo y é: ", retangulo.Yg)</code>
+
+<h4>Inércia em relação ao centróde em x:</h4>
+<code>print("O valor da inércia em relação ao centroide em x é: ", retangulo.Ixg)</code>
+
+<h4>Inércia em relação ao centróde em y:</h4>
+<code>print("O valor da inércia em relação ao centroide em y é: ", retangulo.Iyg)</code>
+
+<h4>Produto da inércia com relação ao centróide em x e y:</h4>
+<code>print("O valor da inércia em relação ao centroide em xy é: ", retangulo.Ixyg)</code>
+
+<h4>Distância vertical Y1 entre o centro de gravidade e o ponto mais baixo ao longo do eixo vertical da seção transversal:</h4>
+<code>print('A distância vertical Y1 entre o centro de gravidade e o ponto mais baixo ao longo do eixo vertical da seção transversal analisada é:', retangulo.Y1)
+</code>
+
+<h4>Distância vertical Y2 entre o ponto mais alto ao longo do eixo vertical e o centro de gravidade analisada:</h4>
+<code>print('A distância vertical Y2 entre o ponto mais alto ao longo do eixo vertical e o centro de gravidade analisada é:', retangulo.Y2)
+</code>
+
+<h4>Módulo resistente W1:</h4>
+<code>print('O módulo resistente W1 (Módulo de elasticidade para flexão (ou módulo de flexão) em relação ao eixo vertical.) é: ', retangulo.W1)</code>
+
+<h4>Módulo resistente W2:</h4>
+<code>print('O módulo resistente W1 (Módulo de elasticidade para flexão (ou módulo de flexão) em relação ao eixo vertical.) é: ', retangulo.W2)</code>
+
+<h4>Altura:</h4>
+<code>print('A altura da peça é: ', retangulo.h)</code>
 
 
