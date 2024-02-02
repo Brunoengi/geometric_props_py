@@ -18,133 +18,37 @@
 
 Observação: As unidades disponibilizadas na tabela são válidas quando se insere as coordenadas da figura poligonal em centímetros (cm).
 
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
-
-
-
-
-<table border="1">
-  <thead>
-  <th>Propriedades Geométricas</th>
-  <th>Sigla</th>
-  <th>Unidade</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Área da seção</td>
-      <td style="text-align: center;">A</td>
-      <td style="text-align: center;">cm²</td>
-    </tr>
-    <tr>
-      <td>Momento estático com relação ao eixo x</td>
-      <td style="text-align: center;">S<sub>x</sub></td>
-      <td style="text-align: center;">cm³</td>
-    </tr>
-    <tr>
-      <td>Momento estático com relação ao eixo y</td>
-      <td style="text-align: center;">S<sub>y</sub></td>
-      <td style="text-align: center;">cm³</td>
-    </tr>
-    <tr>
-      <td>Momento de inércia com relação ao eixo x</td>
-      <td style="text-align: center;">I<sub>x</sub></td>
-      <td style="text-align: center;">cm⁴</td>
-    </tr>
-    <tr>
-      <td>Momento de inércia com relação ao eixo y</td>
-      <td style="text-align: center;">I<sub>y</sub></td>
-      <td style="text-align: center;">cm⁴</td>
-    </tr>
-    <tr>
-      <td>Produto da inércia em relação aos eixos x e y</td>
-      <td style="text-align: center;">I<sub>xy</sub></td>
-      <td style="text-align: center;">cm⁴</td>
-    </tr>
-    <tr>
-      <td>Centróide da seção em relação ao eixo x</td>
-      <td style="text-align: center;">x<sub>g</sub></td>
-      <td style="text-align: center;">cm</td>
-    </tr>
-    <tr>
-      <td>Centróide da seção em relação ao eixo y</td>
-      <td style="text-align: center;">y<sub>g</sub></td>
-      <td style="text-align: center;">cm</td>
-    </tr>
-    <tr>
-      <td>Momento de inércia baricêntrica (com relação ao centróide) no eixo x</td>
-      <td style="text-align: center;">I<sub>xg</sub></td>
-      <td style="text-align: center;">cm⁴</td>
-    </tr>
-    <tr>
-      <td>Momento de inércia baricêntrica (com relação ao centróide) no eixo y</td>
-      <td style="text-align: center;">I<sub>yg</sub></td>
-      <td style="text-align: center;">cm⁴</td>
-    </tr>
-    <tr>
-      <td>Distância vertical entre o centro de gravidade e o ponto mais baixo ao longo do eixo vertical</td>
-      <td style="text-align: center;">Y<sub>1</sub></td>
-      <td style="text-align: center;">cm</td>
-    </tr>
-    <tr>
-      <td>Distância vertical entre o ponto mais alto ao longo do eixo vertical e o centro de gravidade</td>
-      <td style="text-align: center;">Y<sub>2</sub></td>
-      <td style="text-align: center;">cm</td>
-    </tr>
-    <tr>
-      <td>Módulo resistente, calculado considerando Y<sub>1</sub></td>
-      <td style="text-align: center;">W<sub>1</sub></td>
-      <td style="text-align: center;">cm³</td>
-    </tr>
-    <tr>
-      <td>Módulo resistente, calculado considerando Y<sub>2</sub></td>
-      <td style="text-align: center;">W<sub>2</sub></td>
-      <td style="text-align: center;">cm³</td>
-    </tr>
-    <tr>
-      <td>Altura</td>
-      <td style="text-align: center;">h</td>
-      <td style="text-align: center;">cm</td>
-    </tr>
-  </tbody>
-</table>
+| Propriedades Geométricas                                                                      | Sigla          | Unidade |
+| :---                                                                                          | :---:          | :---:   |
+| Área da seção                                                                                 | A              | cm²     |
+| Momento estático com relação ao eixo x                                                        | S<sub>x</sub>  | cm³     |
+| Momento estático com relação ao eixo y                                                        | S<sub>y</sub>  | cm³     |
+| Momento de inércia com relação ao eixo x                                                      | I<sub>x</sub>  | cm⁴     |
+| Momento de inércia com relação ao eixo y                                                      | I<sub>y</sub>  | cm⁴     |
+| Produto da inércia em relação aos eixos x e y                                                 | I<sub>xy</sub> | cm⁴     |
+| Centróide da seção em relação ao eixo x                                                       | x<sub>g</sub>  | cm      |
+| Centróide da seção em relação ao eixo y                                                       | y<sub>g</sub>  | cm      |
+| Momento de inércia baricêntrica (com relação ao centróide) no eixo x                          | I<sub>xg</sub> | cm⁴     |
+| Momento de inércia baricêntrica (com relação ao centróide) no eixo x                          | I<sub>xg</sub> | cm⁴     |
+| Distância vertical entre o centro de gravidade e o ponto mais baixo ao longo do eixo vertical | Y<sub>1</sub>  | cm      |
+| Distância vertical entre o ponto mais alto ao longo do eixo vertical e o centro de gravidade  | Y<sub>2</sub>  | cm      |
+| Módulo resistente, calculado considerando Y<sub>1</sub>                                       | W<sub>1</sub>  | cm³     |
+| Módulo resistente, calculado considerando Y<sub>2</sub>                                       | W<sub>2</sub>  | cm³     |
+| Altura                                                                                        | h              | cm      |
 
 <br>
 
 <p>Além disso, a aplicação permite também obter mais algumas informações relevantes, como:</p>
 
-<table border="1">
-  <thead>
-  <th>Informação</th>
-  <th>Sigla</th>
-  <th>Unidade</th>
-  </thead>
 
-  <tbody>
-    <tr>
-      <td>Coordenada máxima com relação ao eixo x</td>
-      <td>x<sub>max</sub></td>
-      <td style="text-align: center;">cm</td>
-    </tr>
-    <tr>
-      <td>Coordenada mínima com relação ao eixo x</td>
-      <td>x<sub>min</sub></td>
-      <td style="text-align: center;">cm</td>
-    </tr>
-    <tr>
-      <td>Coordenada máxima com relação ao eixo y</td>
-      <td>y<sub>max</sub></td>
-      <td style="text-align: center;">cm</td>
-    </tr>
-    <tr>
-      <td>Coordenada mínima com relação ao eixo y</td>
-      <td>y<sub>min</sub></td>
-      <td style="text-align: center;">cm</td>
-    </tr>
-  </tbody>
-</table>
+
+| Informação                                    | Sigla           | Unidade |
+| :---                                          | :---:           | :---:   |
+| Coordenada máxima com relação ao eixo x       | x<sub>max</sub> | cm²     |
+| Coordenada mínima com relação ao eixo x       | x<sub>min</sub> | cm      |
+| Coordenada máxima com relação ao eixo y       | y<sub>max</sub> | cm      |
+| Coordenada mínima com relação ao eixo y       | y<sub>min</sub> | cm      |
+
 
 <h2>2 - Introdução</h2>
 
@@ -164,46 +68,20 @@ Observação: As unidades disponibilizadas na tabela são válidas quando se ins
 
 <p>O primeiro passo para executar a aplicação é realizar a importação da classe contida no arquivo <i>geometricProps.py</i>. Caso o projeto esteja na mesma pasta que o arquivo da classe, deve-se inserir:</p>
 
-<code>from geometricProps import GeometricProps</code>
+`from geometricProps import GeometricProps`
 
 <p>A próxima etapa é criar uma instância da classe, nesse caso, é esperado no argumento umas lista de dicionário, cada dicionário deve contar a propriedade x, que faz referência a coordenada no eixo x, e deve conter também a propriedade y, que faz referência a coordenada no eixo y. Cada vértice da figura está estritamente relacionado a uma posição da lista, em que dentro está contido um dicionário que necessita da possição do vértice em relação ao eixo x e em relação ao eixo y. Ao instanciar a classe, a seguinte estrutura deve ser fornecida:</p>
 
 No caso a seguir queremos representar uma figura retangular com base de 20cm e altura de 60cm, em que a quina inferior esquerda está situada nas coordenadas (0,0). A tabela e a figura a seguir, representam a situação em questão:
 
-  <table border="1">
-    <thead>
-    <th>Ponto</th>
-    <th>Coordenada no eixo x (cm)</th>
-    <th>Coordenada no eixo y (cm)</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="text-align: center;">1</td>
-        <td style="text-align: center;">0</td>
-        <td style="text-align: center;">0</td>
-      </tr>
-      <tr>
-        <td style="text-align: center;">2</td>
-        <td style="text-align: center;">20</td>
-        <td style="text-align: center;">0</td>
-      </tr>
-      <tr>
-        <td style="text-align: center;">3</td>
-        <td style="text-align: center;">20</td>
-        <td style="text-align: center;">60</td>
-      </tr>
-      <tr>
-        <td style="text-align: center;">4</td>
-        <td style="text-align: center;">0</td>
-        <td style="text-align: center;">60</td>
-      </tr>
-      <tr>
-        <td style="text-align: center;">5</td>
-        <td style="text-align: center;">0</td>
-        <td style="text-align: center;">0</td>
-      </tr>
-    </tbody>
-  </table>
+
+| Ponto  | Coordenada no eixo x | Coordenada no eixo y |
+| :---   | :---:                | :---:                |
+| 1      | 0                    | 0                    |
+| 2      | 20                   | 0                    |
+| 3      | 20                   | 60                   |
+| 4      | 0                    | 60                   |
+| 5      | 0                    | 0                    |
 
 <br>
 
@@ -220,15 +98,15 @@ No caso a seguir queremos representar uma figura retangular com base de 20cm e a
 ```
 retangulo = GeometricProps(
     [
-        {'x':0, 'y':0}, 
-        {'x':20, 'y':0}, 
-        {'x':20, 'y':60}, 
-        {'x':0, 'y':60}, 
-        {'x':0, 'y':0}
+        {'x':0, 'y':0},           ##ponto 1
+        {'x':20, 'y':0},          ##ponto 2
+        {'x':20, 'y':60},         ##ponto 3
+        {'x':0, 'y':60},          ##ponto 4
+        {'x':0, 'y':0}            ##ponto 5
     ])
 ```
   
-<p>Após ter instanciado a classe corretamente, já é possível acessar todas as propriedades descrita na tabela de proprieades geométricas, cada propriedade geométrica é uma respectiva propriedade da classe. A seguir será apresentado o nome da propriedade da classe e sua propriedade geométrica correspondente.</p>
+<p>Após ter instanciado a classe corretamente, já é possível acessar todas as propriedades descritas na tabela de proprieades geométricas, cada propriedade geométrica é uma respectiva propriedade da classe. A seguir será apresentado o nome da propriedade da classe e sua propriedade geométrica correspondente.</p>
 
 <h3>Nome da propriedade geométrica e respectiva propriedade da classe:</h3>
 
@@ -241,67 +119,67 @@ retangulo = GeometricProps(
   <tbody>
     <tr>
       <td>Área da seção (A)</td>
-      <td>retangulo.A</td>
+      <td align="center">retangulo.A</td>
     </tr>
     <tr>
       <td>Momento estático com relação ao eixo x (S<sub>x</sub>)</td>
-      <td>retangulo.Sx</td>
+      <td align="center">retangulo.Sx</td>
     </tr>
     <tr>
       <td>Momento estático com relação ao eixo y (S<sub>y</sub>)</td>
-      <td>retangulo.Sy</td>
+      <td align="center">retangulo.Sy</td>
     </tr>
     <tr>
       <td>Momento de inércia com relação ao eixo x (I<sub>x</sub>)</td>
-      <td>retangulo.Ix</td>
+      <td align="center">retangulo.Ix</td>
     </tr>
     <tr>
       <td>Momento de inércia com relação ao eixo y (I<sub>y</sub>)</td>
-      <td>retangulo.Iy</td>
+      <td align="center">retangulo.Iy</td>
     </tr>
     <tr>
       <td>Produto da inércia em relação aos eixos x e y (I<sub>xy</sub>)</td>
-      <td>retangulo.Ixy</td>
+      <td align="center">retangulo.Ixy</td>
     </tr>
     <tr>
       <td>Centróide da seção em relação ao eixo x (x<sub>g</sub>)</td>
-      <td>retangulo.Xg</td>
+      <td align="center">retangulo.Xg</td>
     </tr>
     <tr>
       <td>Centróide da seção em relação ao eixo y (y<sub>g</sub>)</td>
-      <td>retangulo.Yg</td>
+      <td align="center">retangulo.Yg</td>
     </tr>
     <tr>
       <td>Momento de inércia baricêntrica (com relação ao centróide) no eixo x (I<sub>xg</sub>)</td>
-      <td>retangulo.Ixg</td>
+      <td align="center">retangulo.Ixg</td>
     </tr>
     <tr>
       <td>Momento de inércia baricêntrica (com relação ao centróide) no eixo y (I<sub>yg</sub>)</td>
-      <td>retangulo.Iyg</td>
+      <td align="center">retangulo.Iyg</td>
     </tr>
     <tr>
       <td>Produto de inércia com relação ao centróide em x e y (I<sub>xyg</sub>)</td>
-      <td>retangulo.Ixyg</td>
+      <td align="center">retangulo.Ixyg</td>
     </tr>
     <tr>
       <td>Distância vertical entre o centro de gravidade e o ponto mais baixo ao longo do eixo vertical (Y<sub>1</sub>)</td>
-      <td>retangulo.Y1</td>
+      <td align="center">retangulo.Y1</td>
     </tr>
     <tr>
       <td>Distância vertical entre o ponto mais alto ao longo do eixo vertical e o centro de gravidade (Y<sub>2</sub>)</td>
-      <td>retangulo.Y2</td>
+      <td align="center">retangulo.Y2</td>
     </tr>
     <tr>
       <td>Módulo resistente, calculado considerando Y<sub>1</sub> (W<sub>1</sub>)</td>
-      <td>retangulo.W1</td>
+      <td align="center">retangulo.W1</td>
     </tr>
     <tr>
       <td>Módulo resistente, calculado considerando Y<sub>2</sub> (W<sub>2</sub>)</td>
-      <td>retangulo.W2</td>
+      <td align="center">retangulo.W2</td>
     </tr>
     <tr>
       <td>Altura (h)</td>
-      <td>retangulo.h</td>
+      <td align="center">retangulo.h</td>
     </tr>
   </tbody>
 </table>
