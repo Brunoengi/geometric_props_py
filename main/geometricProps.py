@@ -109,7 +109,7 @@ class GeometricProps:
             self.Ymax = arrPositiony
 
     def set_YMin(self, arrPositiony):
-        if(self.Ymin is None or arrPositiony <= self.Xmin):
+        if(self.Ymin is None or arrPositiony <= self.Ymin):
             self.Ymin = arrPositiony
 
     def sumSignCorrection(self):
