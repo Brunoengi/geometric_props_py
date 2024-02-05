@@ -103,7 +103,7 @@ No caso a seguir, queremos representar uma figura retangular com base de 20cm e 
 
 
 | Ponto  | Coordenada no eixo x | Coordenada no eixo y |
-| :---   | :---:                | :---:                |
+| :---:  | :---:                | :---:                |
 | 1      | 0                    | 0                    |
 | 2      | 20                   | 0                    |
 | 3      | 20                   | 60                   |
@@ -119,7 +119,7 @@ No caso a seguir, queremos representar uma figura retangular com base de 20cm e 
 
 <br>
 
-<p>Após ter realizado a importação da classe, deve-se criar uma instância e atribuir em uma variável. Nesse caso, será criada a variável <code>retangulo</code> e atribuida a instância da classe que espera receber no seu construtor, uma lista indicada por <code>[]</code> e cada posição dessa lista deve ser um dicionário indicado por <code>{}</code>. Dentro desse dicionário, será inserido um conjunto chave, valor que faz referência ao eixo (x ou y) e ao valor de referência.
+<p>Após ter realizado a importação da classe, deve-se criar uma instância e atribuir em uma variável. Nesse caso, será criada a variável <code>rectangulo</code> e atribuida a instância da classe que espera receber no seu construtor, uma lista indicada por <code>[]</code> e cada posição dessa lista deve ser um dicionário indicado por <code>{}</code>. Dentro desse dicionário, será inserido um conjunto chave, valor que faz referência ao eixo (x ou y) e ao valor de referência.
 </p>
 
 ```
