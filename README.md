@@ -365,6 +365,9 @@ Por fim, o resultado no terminal:
 
 <img src='./images/example3_terminal.png' height=300>
 
+<h2>7 - Licença de Uso</h2>
+<p>Neste projeto está sendo utilizado a licença Creative Common CC BY-NC. Esta licença permite que outras pessoas remixem, adaptem e criem a partir do trabalho presente neste repositório, desde que atribuam aos autores presentes no item 8 a devida autoria ou referência em trabalhos acadêmicos. No entanto, não é permitido usar do código presente para fins comerciais sem a permissão dos autores.</p>
+
 <h2>8 - Autores</h2>
 
 <h4>Desenvolvedor: Eng. Bruno Teixeira Santos</h4>
