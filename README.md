@@ -381,3 +381,7 @@ Por fim, o resultado no terminal:
 <p>Redes Sociais:</p>
 <a href="https://github.com/mvreal">Github:</a> <br>
 </p>
+
+<h2>9 - Referências Bibliográficas</h2>
+
+<p>FILHO, A. C. Dimensionamento e verificação de seções poligonais de concreto armado submetidas à flexão composta oblíqua, Porto Alegre, Universidade Federal do Rio Grande do Sul/RS, 2014.</p>
